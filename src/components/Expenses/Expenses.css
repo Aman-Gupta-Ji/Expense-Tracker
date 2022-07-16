@@ -5,3 +5,8 @@
   width: 50rem;
   max-width: 95%;
 }
+
+h3 {
+  text-align: center;
+  color: white;
+}

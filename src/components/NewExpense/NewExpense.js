@@ -7,7 +7,7 @@ const NewExpense = (props) => {
   function saveExpenseDataHandler(enteredExpenseData) {
     const expenseData = {
       ...enteredExpenseData,
-      id: new Date().toString(),
+      id: new Date().toISOString(),
     };
     props.onAddExpense(expenseData);
     console.log(expenseData);
