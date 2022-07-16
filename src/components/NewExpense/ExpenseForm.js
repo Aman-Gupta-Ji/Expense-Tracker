@@ -75,7 +75,7 @@ function ExpenseForm(props) {
       amount: userInput.enteredAmount,
       date: new Date(userInput.enteredDate),
     };
-    console.log(expenseDate);
+    // console.log(expenseDate);
 
     setUserInput({
       enteredTitle: "",
