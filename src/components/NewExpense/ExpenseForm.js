@@ -95,6 +95,8 @@ function ExpenseForm(props) {
             type="text"
             value={userInput.enteredTitle} //two way binding
             onChange={titleChangehandler}
+            maxLength="45"
+            required
           />
         </div>
         <div className="new-expense__control">
@@ -104,6 +106,7 @@ function ExpenseForm(props) {
             value={userInput.enteredAmount}
             min="0.01"
             step="0.01"
+            required
             onChange={amountChangehandler}
           />
         </div>
@@ -114,10 +117,14 @@ function ExpenseForm(props) {
             value={userInput.enteredDate}
             min="2019-01-04"
             max={date}
+            required
             onChange={dateChangehandler}
           />
         </div>
         <div className="new-expense__actions">
+          <button type="button" onClick={props.onCancel}>
+            Cancel
+          </button>
           <button type="submit">Add Expense</button>
         </div>
       </div>
