@@ -20,7 +20,6 @@ const NewExpense = (props) => {
     setIsAdding(true);
   };
   const unsetIsAddingHandler = () => {
-    console.log("cancle");
     setIsAdding(false);
   };
 
