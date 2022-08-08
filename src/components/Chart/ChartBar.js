@@ -18,4 +18,4 @@ function ChartBar(props) {
   );
 }
 
-export default ChartBar;
+export default React.memo(ChartBar);

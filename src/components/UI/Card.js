@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./Card.css";
 
 function Card(props) {
@@ -5,4 +7,4 @@ function Card(props) {
   return <div className={classes}>{props.children}</div>;
 }
 
-export default Card;
+export default React.memo(Card);
